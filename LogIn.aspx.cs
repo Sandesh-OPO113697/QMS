@@ -16,7 +16,10 @@ public partial class LogIn : System.Web.UI.Page
     string encrptedconnctionsrtng = ConfigurationSettings.AppSettings["SuperDataBase"].ToString();
     protected void Page_Load(object sender, EventArgs e)
     {
+        if(!IsPostBack)
+        {
 
+        }
     }
     void Application_Start(object sender, EventArgs e)
     {
